@@ -1,0 +1,66 @@
+#+FILETAGS: :personal:devious:
+* Mission Statement
+   Devious aims to be the simplest, best and easiest to use
+   Javascript library, without compromising a firm foundation of
+   computer science.  Its primary target is 
+
+   If jQuery is the PHP of Javascript, then Devious is the Scheme of
+   Javascript.
+
+** General Requirements
+   - NO SUCKING.
+   - We should not be afraid to use eval and apply; comfortable in the
+     knowledge that when we use these tools, we are using them for the
+     right reason, and the right purpose.
+   - That said, we will not use them for the sake of using them.
+   - Utility and Beauty will be on an even footing.  Form *and*
+     Function.  
+   - Performance is third.  It is important, but Utility and Beauty
+     are more important. (for now)
+   - The focus should be on small components that can be fit together,
+     and evolved into a good system, rather then a monolithic system.
+   - Compatibility with other libraries.  Lets avoid the silliness in
+     overloading the same function as everyone else, and provide
+     special Compatibility modes if needed.
+   - Lets avoid "namespace pollution", without being slavish to it.
+** Code Conventions
+   - Variables should be defined at the top of functions only
+   - All statements should end in a semi-colon.
+   - All ifs, elses, fors, and other compound statements should be
+     wrapped in braches.  No ifs, ands or buts!
+   - == is (almost) never to be used, unless there is an explicit
+     reason for the casting and testing for equality.
+* Milestones
+** Core
+*** Requirements
+    - Should be tiny.  It should be small enough that you feel
+      comfortable running an un-minified version.
+    - Should be extensible, by other library writers, and by users.
+    - Should include a basic package system, so that extending the
+      system is easy.
+    - Should be executable from ANY Javascript context: the browser, a
+      greasemonkey script, inside of mozrepl, a Rhino instance, a Palm
+      Pre and potentially even Actionscript.
+*** Packaging System
+**** Requirements
+	 - Packages should be first class, and potentially anonymous
+       objects
+	 - The packing system must not suck
+	 - use of a feature based system is best, like Emacs or even
+       feature checking inside of JS.   A feature object?
+	 - Features should be identified by some kind of URL, so that a
+       feature can be automagickally downloaded.
+** Test Suite
+*** TODO Put test suite into its own package
+*** TODO Write better tests for the test suite
+** AOP
+** Macro Facility
+** SRFI 1 (List Library)
+** Dom Extension Library
+** CSS Extension Library
+** JSXON - Javascript Serialized Xml Object Notation.  
+   if JSON is the S-expression of javascript, then JSXON is the SXML
+   of Javascript.
+* Settings
+** Dictionary
+   LocalWords: jQuery PHP Javascript JSON JSXON SXML CSS SRFI TODO
